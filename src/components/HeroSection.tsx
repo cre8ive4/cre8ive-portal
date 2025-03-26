@@ -1,33 +1,31 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-
 const HeroSection = () => {
   const shellRef = useRef<HTMLDivElement>(null);
-  
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!shellRef.current) return;
-      
-      const { clientX, clientY } = e;
-      const { left, top, width, height } = shellRef.current.getBoundingClientRect();
-      
+      const {
+        clientX,
+        clientY
+      } = e;
+      const {
+        left,
+        top,
+        width,
+        height
+      } = shellRef.current.getBoundingClientRect();
       const x = (clientX - left - width / 2) / 25;
       const y = (clientY - top - height / 2) / 25;
-      
-      shellRef.current.style.transform = `translate(${x}px, ${y}px) rotate(${x/2}deg)`;
+      shellRef.current.style.transform = `translate(${x}px, ${y}px) rotate(${x / 2}deg)`;
     };
-    
     document.addEventListener('mousemove', handleMouseMove);
-    
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
-
-  return (
-    <section className="min-h-screen pt-24 relative overflow-hidden">
+  return <section className="min-h-screen pt-24 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-cre8ive-yellow/20 via-transparent to-transparent opacity-50"></div>
@@ -71,11 +69,7 @@ const HeroSection = () => {
             <div className="relative z-10 bg-cre8ive-teal rounded-full p-6 shadow-2xl">
               <div className="bg-cre8ive-teal rounded-full p-4 relative">
                 <div ref={shellRef} className="w-52 h-52 md:w-72 md:h-72 relative transition-transform duration-200 ease-out">
-                  <img 
-                    src="/lovable-uploads/a68cd7d8-94eb-4942-aab9-f73bcdd03448.png" 
-                    alt="Cre8ive4 Logo" 
-                    className="w-full h-full object-contain"
-                  />
+                  <img src="/lovable-uploads/a68cd7d8-94eb-4942-aab9-f73bcdd03448.png" alt="Cre8ive4 Logo" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
@@ -84,14 +78,7 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-cre8ive-teal animate-bounce opacity-80">
-        <div className="w-8 h-12 border-2 border-cre8ive-teal rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-cre8ive-teal rounded-full mt-2"></div>
-        </div>
-        <span className="text-sm font-medium mt-2">Scroll Down</span>
-      </div>
-    </section>
-  );
+      
+    </section>;
 };
-
 export default HeroSection;
