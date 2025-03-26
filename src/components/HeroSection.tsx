@@ -72,7 +72,7 @@ const HeroSection = () => {
               <div className="bg-cre8ive-teal rounded-full p-4 relative">
                 <div ref={shellRef} className="w-52 h-52 md:w-72 md:h-72 relative transition-transform duration-200 ease-out">
                   <img 
-                    src="/lovable-uploads/a5c8a4cd-903d-46fe-b566-209bdf965e95.png" 
+                    src="/lovable-uploads/a68cd7d8-94eb-4942-aab9-f73bcdd03448.png" 
                     alt="Cre8ive4 Logo" 
                     className="w-full h-full object-contain"
                   />
