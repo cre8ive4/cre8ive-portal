@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ChevronRight, Loader } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -18,14 +19,30 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    // Prepare template parameters for EmailJS
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      to_email: "cre8ivefour@gmail.com",
+      subject: formData.subject,
+      message: formData.message,
+    };
+    
+    try {
+      // You need to sign up for EmailJS and get your own service ID, template ID, and user ID
+      // Replace the placeholders below with your actual IDs
+      await emailjs.send(
+        'YOUR_SERVICE_ID',  // Create a service and get ID from EmailJS dashboard
+        'YOUR_TEMPLATE_ID', // Create an email template and get ID from EmailJS dashboard
+        templateParams,
+        'YOUR_USER_ID'      // Get your user ID from EmailJS dashboard
+      );
+      
       toast.success("Message sent successfully! We'll respond shortly.");
       
       // Reset form
@@ -35,7 +52,12 @@ const ContactForm = () => {
         subject: "",
         message: "",
       });
-    }, 1500);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -114,8 +136,10 @@ const ContactForm = () => {
           ></textarea>
         </div>
         
-        {/* Submit Button */}
         <div className="pt-2">
+          <p className="text-xs text-gray-500 mb-4">
+            Your message will be sent to cre8ivefour@gmail.com
+          </p>
           <button
             type="submit"
             disabled={isSubmitting}
