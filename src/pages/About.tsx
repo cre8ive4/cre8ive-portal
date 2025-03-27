@@ -61,8 +61,7 @@ const About = () => {
       role: "Audio Producer",
       bio: "Prince is a talented audio producer with a passion for creating immersive soundscapes and engaging audio experiences.",
       socials: {
-        instagram:
-          "https://www.instagram.com/prince..1269?igsh=MTkzbDBjaW11MDJrZQ==",
+        instagram: "https://www.instagram.com/_prince._.1269/",
         linkedin: "https://linkedin.com",
         email: "princebhimani416@gmail.com",
       },

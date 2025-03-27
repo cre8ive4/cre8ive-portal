@@ -12,35 +12,50 @@ const Footer = () => {
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/a68cd7d8-94eb-4942-aab9-f73bcdd03448.png" 
-                alt="Cre8ive4 Logo" 
+              <img
+                src="/lovable-uploads/a68cd7d8-94eb-4942-aab9-f73bcdd03448.png"
+                alt="Cre8ive4 Logo"
                 className="h-12 w-12 mr-2"
               />
               <span className="text-2xl font-bold">CRE8IVE4</span>
             </div>
             <p className="text-white/80 max-w-md mt-2">
-              We craft digital experiences that elevate brands and businesses. Our team of creative professionals deliver high-quality web development, video editing, graphic design, and audio production services.
+              We craft digital experiences that elevate brands and businesses.
+              Our team of creative professionals deliver high-quality web
+              development, video editing, graphic design, and audio production
+              services.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all">
+              <a
+                href="https://www.instagram.com/cre8ive.4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@cre8ive4.com"
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all">
+              <a
+                href="mailto:contact@cre8ive4.com"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-all"
+              >
                 <Mail size={20} />
               </a>
             </div>
           </div>
-          
+
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 border-b border-white/20 pb-2">Our Services</h3>
+            <h3 className="text-xl font-semibold mb-4 border-b border-white/20 pb-2">
+              Our Services
+            </h3>
             <ul className="space-y-2">
               <li className="hover:translate-x-1 transition-transform">
                 <Link to="/portfolio" className="flex items-center">
@@ -68,10 +83,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 border-b border-white/20 pb-2">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-4 border-b border-white/20 pb-2">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li className="hover:translate-x-1 transition-transform">
                 <Link to="/">Home</Link>
@@ -91,7 +108,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-12 pt-6 border-t border-white/20 text-white/70 text-center">
           <p>© {currentYear} Cre8ive4. All rights reserved.</p>
         </div>
