@@ -37,10 +37,10 @@ const ContactForm = () => {
       // You need to sign up for EmailJS and get your own service ID, template ID, and user ID
       // Replace the placeholders below with your actual IDs
       await emailjs.send(
-        'YOUR_SERVICE_ID',  // Create a service and get ID from EmailJS dashboard
-        'YOUR_TEMPLATE_ID', // Create an email template and get ID from EmailJS dashboard
+        "service_98im0db", // Create a service and get ID from EmailJS dashboard
+        "template_813u6yc", // Create an email template and get ID from EmailJS dashboard
         templateParams,
-        'YOUR_USER_ID'      // Get your user ID from EmailJS dashboard
+        "bjKMvqEsvR4U2AVQe" // Get your user ID from EmailJS dashboard
       );
       
       toast.success("Message sent successfully! We'll respond shortly.");

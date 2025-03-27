@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import TeamMember from "@/components/TeamMember";
@@ -7,51 +6,69 @@ const About = () => {
   // Team members data
   const teamMembers = [
     {
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
-      name: "Alex Morgan",
+      image: "/lovable-uploads/dilip.jpg",
+      name: "Dilip Khunti",
       role: "Creative Director",
-      bio: "Alex leads our creative vision with over 10 years of experience in design and digital strategy.",
+      bio: "Dilip leads our creative vision with over 2 years of experience in design and digital strategy.",
       socials: {
-        instagram: "https://instagram.com",
-        linkedin: "https://linkedin.com",
-        email: "alex@cre8ive4.com",
+        instagram: "https://instagram.com/dileepkhunti",
+        linkedin: "https://linkedin.com/in/dilip-khunti",
+        email: "khunti2607@gmail.com",
       },
     },
     {
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
-      name: "Sarah Chen",
-      role: "Web Developer",
-      bio: "Sarah specializes in front-end development, creating responsive and interactive web experiences.",
-      socials: {
-        instagram: "https://instagram.com",
-        linkedin: "https://linkedin.com",
-        email: "sarah@cre8ive4.com",
-      },
-    },
-    {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
-      name: "David Wilson",
-      role: "Video Producer",
-      bio: "David brings stories to life through compelling videography and expert editing techniques.",
-      socials: {
-        instagram: "https://instagram.com",
-        linkedin: "https://linkedin.com",
-        email: "david@cre8ive4.com",
-      },
-    },
-    {
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-      name: "Emma Johnson",
+      image: "/lovable-uploads/uttam.jpg",
+      name: "Uttam Garchar",
       role: "Graphic Designer",
-      bio: "Emma creates stunning visual identities and graphics that help brands stand out from the crowd.",
+      bio: "Uttam is a talented graphic designer with a keen eye for detail and a passion for creating beautiful visuals.",
       socials: {
-        instagram: "https://instagram.com",
+        instagram:
+          "https://www.instagram.com/uttamahir0272/profilecard/?igsh=NGF2Z2hkeXkzbjFy",
+        linkedin:
+          "https://www.linkedin.com/in/garchar-uttam-679688343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        email: "garcharuttam3@gmail.com",
+      },
+    },
+    {
+      image: "/lovable-uploads/abhi.jpg",
+      name: "Abhi Rathod",
+      role: "Web Developer",
+      bio: "Abhi is a skilled web developer with a passion for creating responsive and user-friendly websites.",
+      socials: {
+        instagram:
+          "https://www.instagram.com/abhirathod.27?igsh=aHF1emR6dGQ2aGdm",
+        linkedin:
+          "https://www.linkedin.com/in/abhi-rathod-52b9a7347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        email: "abhirathod2710@gmail.com",
+      },
+    },
+    {
+      image: "/lovable-uploads/ajay.jpg",
+      name: "Ajay Dhandhukiya",
+      role: "Video Editor",
+      bio: "Ajay is a talented video editor with a passion for storytelling and a keen eye for detail.",
+      socials: {
+        instagram:
+          "https://www.instagram.com/ajay_dhandhukiya_654?igsh=MXRyZzQ2bGMycnpyZA==",
+        linkedin:
+          "https://www.linkedin.com/in/dhandhukiya-ajay-46824b342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        email: "dhandhukiyaajay6542@gmail.com",
+      },
+    },
+    {
+      image: "/lovable-uploads/prince.jpg",
+      name: "Prince Bhimani",
+      role: "Audio Producer",
+      bio: "Prince is a talented audio producer with a passion for creating immersive soundscapes and engaging audio experiences.",
+      socials: {
+        instagram:
+          "https://www.instagram.com/prince..1269?igsh=MTkzbDBjaW11MDJrZQ==",
         linkedin: "https://linkedin.com",
-        email: "emma@cre8ive4.com",
+        email: "princebhimani416@gmail.com",
       },
     },
   ];
-  
+
   return (
     <main className="pt-20">
       {/* Hero Section */}
@@ -67,26 +84,34 @@ const About = () => {
                 We Craft Digital Experiences That Inspire
               </h1>
               <p className="text-lg text-gray-600">
-                Founded in 2018, Cre8ive4 is a team of passionate creatives dedicated to helping businesses and individuals bring their visions to life through digital media.
+                Founded in 2024, Cre8ive4 is a team of passionate creatives
+                dedicated to helping businesses and individuals bring their
+                visions to life through digital media.
               </p>
               <p className="text-gray-600">
-                We combine technical expertise with creative flair to deliver web development, video editing, graphic design, and audio production services that exceed expectations and help our clients achieve their goals.
+                We combine technical expertise with creative flair to deliver
+                web development, video editing, graphic design, and audio
+                production services that exceed expectations and help our
+                clients achieve their goals.
               </p>
               <div className="pt-4">
-                <Link to="/contact" className="btn-primary inline-flex items-center">
+                <Link
+                  to="/contact"
+                  className="btn-primary inline-flex items-center"
+                >
                   Work With Us
                   <ArrowRight size={18} className="ml-2" />
                 </Link>
               </div>
             </div>
-            
+
             {/* Right Image */}
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-cre8ive-teal/20 to-cre8ive-yellow/20 rounded-2xl blur-xl"></div>
               <div className="relative rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop" 
-                  alt="Creative team working together" 
+                <img
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop"
+                  alt="Creative team working together"
                   className="w-full h-auto"
                 />
               </div>
@@ -94,7 +119,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Our Mission Section */}
       <section className="py-16">
         <div className="container-custom">
@@ -103,22 +128,22 @@ const About = () => {
             <div className="order-2 md:order-1">
               <div className="relative h-96">
                 <div className="absolute top-0 right-0 w-[80%] h-[80%] bg-cre8ive-teal rounded-2xl overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
-                    alt="Web development project" 
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+                    alt="Web development project"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 w-[60%] h-[65%] bg-cre8ive-yellow rounded-2xl overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1547119957-637f8679db1e?q=80&w=2064&auto=format&fit=crop" 
-                    alt="Digital design project" 
+                  <img
+                    src="https://images.unsplash.com/photo-1547119957-637f8679db1e?q=80&w=2064&auto=format&fit=crop"
+                    alt="Digital design project"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
-            
+
             {/* Right - Content */}
             <div className="space-y-6 order-1 md:order-2">
               <div className="inline-block bg-cre8ive-teal/10 text-cre8ive-teal text-sm font-medium py-1 px-3 rounded-full mb-2">
@@ -128,36 +153,59 @@ const About = () => {
                 Bringing Creative Visions to Life
               </h2>
               <p className="text-gray-600">
-                Our mission is to empower businesses and individuals with digital solutions that are not only visually stunning but also functional and effective in meeting their objectives.
+                Our mission is to empower businesses and individuals with
+                digital solutions that are not only visually stunning but also
+                functional and effective in meeting their objectives.
               </p>
               <p className="text-gray-600">
-                We believe in the power of creativity to transform ideas into impactful digital experiences that resonate with audiences and drive results.
+                We believe in the power of creativity to transform ideas into
+                impactful digital experiences that resonate with audiences and
+                drive results.
               </p>
-              
+
               {/* Values */}
               <div className="pt-4 grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-cre8ive-teal mb-1">Creativity</h3>
-                  <p className="text-sm text-gray-600">We approach every project with fresh ideas and innovative thinking.</p>
+                  <h3 className="font-semibold text-cre8ive-teal mb-1">
+                    Creativity
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    We approach every project with fresh ideas and innovative
+                    thinking.
+                  </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-cre8ive-teal mb-1">Quality</h3>
-                  <p className="text-sm text-gray-600">We maintain the highest standards in everything we create.</p>
+                  <h3 className="font-semibold text-cre8ive-teal mb-1">
+                    Quality
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    We maintain the highest standards in everything we create.
+                  </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-cre8ive-teal mb-1">Collaboration</h3>
-                  <p className="text-sm text-gray-600">We work closely with clients to ensure their vision is realized.</p>
+                  <h3 className="font-semibold text-cre8ive-teal mb-1">
+                    Collaboration
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    We work closely with clients to ensure their vision is
+                    realized.
+                  </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold text-cre8ive-teal mb-1">Innovation</h3>
-                  <p className="text-sm text-gray-600">We stay ahead of the curve with current technologies and trends.</p>
+                  <h3 className="font-semibold text-cre8ive-teal mb-1">
+                    Innovation
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    We stay ahead of the curve with current technologies and
+                    trends.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Team Section */}
       <section className="py-16 bg-gray-50">
         <div className="container-custom">
@@ -167,10 +215,11 @@ const About = () => {
             </div>
             <h2 className="section-title">Meet the Creatives</h2>
             <p className="text-lg text-gray-600">
-              We're a team of passionate individuals dedicated to helping you bring your vision to life.
+              We're a team of passionate individuals dedicated to helping you
+              bring your vision to life.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-animation">
             {teamMembers.map((member) => (
               <TeamMember key={member.name} {...member} />
@@ -178,15 +227,21 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 bg-cre8ive-teal text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work Together?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Work Together?
+          </h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            Let's collaborate to create something amazing that achieves your goals and exceeds your expectations.
+            Let's collaborate to create something amazing that achieves your
+            goals and exceeds your expectations.
           </p>
-          <Link to="/contact" className="btn-secondary inline-flex items-center">
+          <Link
+            to="/contact"
+            className="btn-secondary inline-flex items-center"
+          >
             Start a Project
             <ArrowRight size={18} className="ml-2" />
           </Link>
