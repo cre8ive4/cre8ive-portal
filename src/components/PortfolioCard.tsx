@@ -15,7 +15,7 @@ const PortfolioCard = ({ image, title, category, description, link }: PortfolioC
   
   return (
     <div 
-      className="group relative rounded-2xl overflow-hidden hover-scale cursor-pointer"
+      className="group relative rounded-2xl overflow-hidden hover-scale cursor-pointer shadow-slate-600 shadow-xl hover:shadow-2xl transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
