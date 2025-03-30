@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
+import { link } from "fs";
 
 // Project categories
 type Category = "All" | "Web Development" | "Video Editing" | "Graphic Design" | "Audio Production";
@@ -11,76 +12,49 @@ const Portfolio = () => {
   // Portfolio projects data
   const projects = [
     {
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-      title: "Oceanview Resort Website",
+      image: "/portfolio/nextgenworld.png",
+      link: "https://nextgen-kids-learning.lovable.app/",
+      title: "NextGen World",
       category: "Web Development",
-      description: "Modern, responsive website for a luxury beach resort.",
+      description: "Modern, responsive website of Education institute.",
     },
     {
-      image: "https://images.unsplash.com/photo-1547119957-637f8679db1e?q=80&w=2064&auto=format&fit=crop",
-      title: "Fitness App UI",
+      image: "/portfolio/avadhautoagency.png",
+      link: "https://avadh-auto-parts.vercel.app/",
+      title: "Avadha Auto Agency",
       category: "Web Development",
-      description: "Mobile fitness application interface design and implementation.",
+      description: "Modern, responsive website for an auto parts agency.",
     },
     {
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
-      title: "E-commerce Platform",
+      image: "/portfolio/paramboyshostel.png",
+      link: "https://hostelconnective.lovable.app/",
+      title: "Param Boys Hostel",
       category: "Web Development",
-      description: "Full-featured online store with payment integration.",
+      description: "Modern, responsive website for HOstel.",
     },
+
     {
-      image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2070&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2070&auto=format&fit=crop",
       title: "Corporate Video Series",
       category: "Video Editing",
       description: "Series of promotional videos for a tech company.",
     },
+
     {
-      image: "https://images.unsplash.com/photo-1581905764498-f1b60bae941a?q=80&w=2064&auto=format&fit=crop",
-      title: "Product Launch Video",
-      category: "Video Editing",
-      description: "Cinematic product reveal for a smartphone launch.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=2044&auto=format&fit=crop",
-      title: "Travel Documentary",
-      category: "Video Editing",
-      description: "Short documentary about sustainable tourism.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop",
       title: "Eco Brand Identity",
       category: "Graphic Design",
       description: "Complete brand identity for an eco-friendly product line.",
     },
+
     {
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop",
-      title: "Magazine Layout",
-      category: "Graphic Design",
-      description: "Editorial design for a lifestyle magazine.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2070&auto=format&fit=crop",
-      title: "Product Packaging",
-      category: "Graphic Design",
-      description: "Packaging design for a premium coffee brand.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop",
       title: "Podcast Production",
       category: "Audio Production",
       description: "Full audio production for a business leadership podcast.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=2070&auto=format&fit=crop",
-      title: "Commercial Voice-over",
-      category: "Audio Production",
-      description: "Professional voice-over for a nationwide TV commercial.",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop",
-      title: "Music Production",
-      category: "Audio Production",
-      description: "Original soundtrack composition for a short film.",
     },
   ];
   
