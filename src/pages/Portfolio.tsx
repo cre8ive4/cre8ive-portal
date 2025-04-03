@@ -55,6 +55,7 @@ const Portfolio = () => {
       image:
         "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2070&auto=format&fit=crop",
       title: "Catchy Video Ad",
+      link: "https://www.instagram.com/cre8ive.4",
       category: "Video Editing",
       description: "Series of promotional videos for a new product launch.",
     },
@@ -63,6 +64,7 @@ const Portfolio = () => {
       image:
         "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop",
       title: "Eco Brand Identity",
+      link: "https://www.instagram.com/cre8ive.4",
       category: "Graphic Design",
       description: "Complete brand identity for an eco-friendly product line.",
     },
@@ -71,6 +73,7 @@ const Portfolio = () => {
       image:
         "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop",
       title: "Audio Dubbing",
+      link: "https://www.instagram.com/cre8ive.4",
       category: "Audio Production",
       description: "Full audio production for Youtuber.",
     },
