@@ -8,13 +8,20 @@ type Category =
   | "Web Development"
   | "Video Editing"
   | "Graphic Design"
-  | "Audio Production";
+  | "Content Writing";
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
 
   // Portfolio projects data
   const projects = [
+    {
+      image: "/portfolio/importify.png",
+      link: "https://importifygroup.com/",
+      title: "Importify Group",
+      category: "Web Development",
+      description: "Modern, responsive website for Importify Group.",
+    },
     {
       image: "/portfolio/nextgenworld.png",
       link: "https://thenextgenworld.vercel.app/",
@@ -23,18 +30,18 @@ const Portfolio = () => {
       description: "Modern, responsive website of Education institute.",
     },
     {
-      image: "/portfolio/avadhautoagency.png",
-      link: "https://avadh-auto-parts.vercel.app/",
-      title: "Avadha Auto Agency",
-      category: "Web Development",
-      description: "Modern, responsive website for an auto parts agency.",
-    },
-    {
       image: "/portfolio/paramboyshostel.png",
       link: "https://paramboyshostel.vercel.app/",
       title: "Param Boys Hostel",
       category: "Web Development",
       description: "Modern, responsive website for HOstel.",
+    },
+    {
+      image: "/portfolio/avadhautoagency.png",
+      link: "https://avadh-auto-parts.vercel.app/",
+      title: "Avadha Auto Agency",
+      category: "Web Development",
+      description: "Modern, responsive website for an auto parts agency.",
     },
     {
       image: "/portfolio/startup.png",
@@ -46,7 +53,7 @@ const Portfolio = () => {
     {
       image: "/portfolio/starter.png",
       link: "https://insight-spark-blog.vercel.app/",
-      title: "Param Boys Hostel",
+      title: "Insight Spark",
       category: "Web Development",
       description: "Modern, responsive website for Blog.",
     },
@@ -71,11 +78,11 @@ const Portfolio = () => {
 
     {
       image:
-        "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop",
-      title: "Audio Dubbing",
+        "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Content Writing",
       link: "https://www.instagram.com/cre8ive.4",
-      category: "Audio Production",
-      description: "Full audio production for Youtuber.",
+      category: "Content Writing",
+      description: "Engaging blog posts and articles for a tech startup.",
     },
   ];
 
@@ -91,7 +98,7 @@ const Portfolio = () => {
     "Web Development",
     "Video Editing",
     "Graphic Design",
-    "Audio Production",
+    "Content Writing",
   ];
 
   return (

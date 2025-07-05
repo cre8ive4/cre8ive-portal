@@ -6,23 +6,18 @@ const HeroSection = () => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!shellRef.current) return;
-      const {
-        clientX,
-        clientY
-      } = e;
-      const {
-        left,
-        top,
-        width,
-        height
-      } = shellRef.current.getBoundingClientRect();
+      const { clientX, clientY } = e;
+      const { left, top, width, height } =
+        shellRef.current.getBoundingClientRect();
       const x = (clientX - left - width / 2) / 25;
       const y = (clientY - top - height / 2) / 25;
-      shellRef.current.style.transform = `translate(${x}px, ${y}px) rotate(${x / 2}deg)`;
+      shellRef.current.style.transform = `translate(${x}px, ${y}px) rotate(${
+        x / 2
+      }deg)`;
     };
-    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
   return (
@@ -43,12 +38,12 @@ const HeroSection = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-cre8ive-teal leading-tight">
             Bring Your{" "}
-            <span className="relative text-cre8ive-yellow">Creative</span> Vision
-            To Life
+            <span className="relative text-cre8ive-yellow">Creative</span>{" "}
+            Vision To Life
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 max-w-xl">
-            Web development, video editing, graphic design, and audio production
+            Web development, video editing, graphic design, and content writing
             services for businesses and individuals.
           </p>
 

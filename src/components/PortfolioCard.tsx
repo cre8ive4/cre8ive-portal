@@ -20,7 +20,7 @@ const PortfolioCard = ({ image, title, category, description, link }: PortfolioC
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+      <div className="relative aspect-[16/8] overflow-hidden rounded-2xl">
         <img 
           src={image} 
           alt={title} 

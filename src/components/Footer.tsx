@@ -85,7 +85,7 @@ const Footer = () => {
               <li className="hover:translate-x-1 transition-transform">
                 <Link to="/portfolio" className="flex items-center">
                   <Headphones size={16} className="mr-2" />
-                  <span>Audio Production</span>
+                  <span>Content Writing</span>
                 </Link>
               </li>
             </ul>

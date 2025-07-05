@@ -2,8 +2,8 @@ import {
   Globe,
   Video,
   Image as ImageIcon,
-  Headphones,
   ArrowRight,
+  Pencil,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
@@ -35,10 +35,10 @@ const Index = () => {
       link: "/portfolio",
     },
     {
-      icon: <Headphones size={24} />,
-      title: "Audio Production",
+      icon: <Pencil size={24} />,
+      title: "Content Writing",
       description:
-        "High-quality audio production and dubbing services to enhance your content.",
+        "Engaging and SEO-optimized content writing services to boost your online presence.",
       link: "/portfolio",
     },
   ];
@@ -47,21 +47,21 @@ const Index = () => {
   const featuredProjects = [
     {
       image: "/portfolio/nextgenworld.png",
-      link: "https://nextgen-kids-learning.lovable.app/",
+      link: "https://thenextgenworld.vercel.app/",
       title: "NextGen World",
       category: "Web Development",
       description: "Modern, responsive website of Education institute.",
     },
     {
-      image: "/portfolio/avadhautoagency.png",
-      link: "https://avadh-auto-parts.vercel.app/",
-      title: "Avadha Auto Agency",
+      image: "/portfolio/importify.png",
+      link: "https://importifygroup.com/",
+      title: "Importify Group",
       category: "Web Development",
-      description: "Modern, responsive website for an auto parts agency.",
+      description: "Modern, responsive website for Importify Group.",
     },
     {
       image: "/portfolio/paramboyshostel.png",
-      link: "https://hostelconnective.lovable.app/",
+      link: "https://paramboyshostel.vercel.app/",
       title: "Param Boys Hostel",
       category: "Web Development",
       description: "Modern, responsive website for HOstel.",
